@@ -1,6 +1,7 @@
 # Rustrix / Matrix Animation 💻
 
 A highly performant and customizable terminal animation that simulates the iconic "digital rain" effect from The Matrix. Built in Rust, this application leverages the `crossterm` and `tokio` libraries to create a smooth, responsive, and resource-efficient visual experience that reacts in real-time to terminal resizing and user input.
+This code is based on Matrix Animation golang version, see [HuGoRain](https://github.com/hugomf/hugo_rain.git) 
 
 ![A screenshot of the matrix code animation](images/image.png)
 
