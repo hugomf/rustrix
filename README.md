@@ -23,7 +23,7 @@ This code is based on Matrix Animation golang version, see [HuGoRain](https://gi
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/hugomf/rustrix.git](https://github.com/hugomf/rustrix.gi)
+    git clone https://github.com/hugomf/rustrix.git
     cd rustrix
     ```
 
