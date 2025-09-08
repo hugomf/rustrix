@@ -1,0 +1,13 @@
+[package]
+name = "rustrix"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] } 
+crossterm = { version = "0.27.0", features = ["event-stream"] }
+rand = "0.8"
+clap = { version = "4.4.11", features = ["derive"] }
+lazy_static = "1.4"
+terminal-colorsaurus = "1.0"
+futures = "0.3"
