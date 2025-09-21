@@ -1,7 +1,12 @@
 [package]
-name = "rustrix"
+name = "rustrix-term"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
+readme = "README.md"
+repository = "https://github.com/hugomf/rustrix-term"
+description = "Terminal animation that brings the iconic 'digital rain' effect from The Matrix Movie to your command line"
+keywords = ["matrix", "terminal", "rain", "cascade", "animation"]
+categories = ["command-line-utilities"]
 
 [dependencies]
 tokio = { version = "1", features = ["full"] } 
