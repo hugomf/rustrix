@@ -72,9 +72,15 @@ You can customize the animation using the following flags. Use `--list` to see a
 rustrix-term --color purple --chars binary --speed 10.0
 
 # Run with a heavy density of Kanji characters
+<<<<<<< Updated upstream
 rustrix-term --density 3 --color amber --chars persian --density 1.2
 ```
 
 This is how it will look like:
 
 ![Example](images/persian.png)
+=======
+cargo run --release -- --chars kanji --density 1.2
+
+![A screenshot of the matrix code animation](images/image.png)
+>>>>>>> Stashed changes
