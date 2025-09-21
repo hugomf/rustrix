@@ -13,13 +13,18 @@ This code is based on Matrix Animation golang version, see [HuGoRain](https://gi
 -   **Automatic Background Detection:** The program can automatically detect your terminal's background color to create seamless, fading drop trails.
 -   **Multiple Character Sets:** Choose from predefined sets like binary, emojis, or Kanji, or provide your own.
 
-## ⚙️ How to Run
+## ⚙️ Installation and Usage
 
-### Prerequisites
+### Installation
 
--   [Rust and Cargo](https://www.rust-lang.org/tools/install) installed on your system.
+#### From crates.io (Recommended)
 
-### Running from source
+Install directly from crates.io using cargo:
+```bash
+cargo install rustrix-term
+```
+
+#### From Source
 
 1.  **Clone the repository:**
     ```bash
@@ -27,11 +32,27 @@ This code is based on Matrix Animation golang version, see [HuGoRain](https://gi
     cd rustrix
     ```
 
-2.  **Run the application:**
+2.  **Install locally:**
     ```bash
-    cargo run --release
+    cargo install --path .
     ```
-    _Note: Using `--release` is highly recommended for optimal performance._
+
+### Prerequisites
+
+-   [Rust and Cargo](https://www.rust-lang.org/tools/install) installed on your system.
+
+### Running the Application
+
+After installation, you can run the application directly:
+```bash
+rustrix-term
+```
+
+Or if running from source:
+```bash
+cargo run --release
+```
+_Note: Using `--release` is highly recommended for optimal performance._
 
 ### Command-line Flags
 
@@ -40,30 +61,26 @@ You can customize the animation using the following flags. Use `--list` to see a
 -   `--color <NAME>`
     -   Sets the color theme.
     -   **Available Colors:** `green` (default), `amber`, `red`, `orange`, `blue`, `purple`, `cyan`, `pink`, `white`.
-    -   **Example:** `cargo run -- --color blue`
+    -   **Example:** `rustrix-term --color blue`
 
 -   `--chars <NAME>`
     -   Specifies the character set to use.
     -   **Available Sets:** `matrix` (default), `binary`, `symbols`, `emojis`, `kanji`, `greek`, `cyrillic`.
-    -   **Example:** `cargo run -- --chars emojis`
+    -   **Example:** `rustrix-term --chars emojis`
 
 -   `--speed <VALUE>`
     -   Controls the animation speed. Higher values mean faster animation.
     -   **Default:** `5.0`.
-    -   **Example:** `cargo run -- --speed 20.0` (insanely fast)
+    -   **Example:** `rustrix-term --speed 20.0` (insanely fast)
 
 -   `--density <VALUE>`
     -   Adjusts the number of drops on the screen. Higher values result in more drops.
     -   **Default:** `0.7`.
-    -   **Example:** `cargo run -- --density 1.5` (heavy density)
-
--   `--background-color <R,G,B>`
-    -   Manually sets the background color for accurate color fading. By default, it will attempt to detect the terminal's background color.
-    -   **Example:** `cargo run -- --background-color 0,0,0` (black)
+    -   **Example:** `rustrix-term --density 1.5` (heavy density)
 
 -   `--list`
     -   Displays all available options and their values.
-    -   **Example:** `cargo run -- --list`
+    -   **Example:** `rustrix-term --list`
 
 ### Example Usage
 
@@ -78,4 +95,3 @@ rustrix-term --density 3 --color amber --chars persian --density 1.2
 This is how it will look like:
 
 ![Example](images/persian.png)
-
