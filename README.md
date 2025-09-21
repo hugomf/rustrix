@@ -69,7 +69,7 @@ You can customize the animation using the following flags. Use `--list` to see a
 
 ```bash
 # Run with a fast, purple-colored binary drop
-cargo run --release -- --color purple --chars binary --speed 10.0
+rustrix-term -- --color purple --chars binary --speed 10.0
 
 # Run with a heavy density of Kanji characters
-cargo run --release -- --chars kanji --density 1.2
+rustrix-term --release -- --chars kanji --density 1.2
