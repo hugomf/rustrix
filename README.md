@@ -72,4 +72,9 @@ You can customize the animation using the following flags. Use `--list` to see a
 rustrix-term --color purple --chars binary --speed 10.0
 
 # Run with a heavy density of Kanji characters
-rustrix-term --chars kanji --density 1.2
+rustrix-term --density 3 --color amber --chars persian --density 1.2
+```
+
+This is how it will look like:
+
+![Example](images/persian.png)
